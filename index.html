@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styling/style.css">
+    <link rel="icon" href="resource/love.jpg">
+    <link rel="stylesheet" href="./styling/msg.css">
+    <script src="javascript/algo.js" defer></script>
+    <script src="javascript/clock.js" defer></script>
+    <script src="./javascript/message.js" defer></script>
+</head>
+
+<body style="background: url(./resource/heartbg.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;">
+    <div class="page">
+        <div class="friends">
+            <div class="box">
+                <img class="profile-pic" src="./resource/avatar.jpg" alt="avatar">
+                <div class="profile">
+                    <strong class="name" style="font-weight:bold;">Minh Nguyễn</strong>
+                    <p class="bdate" style="color: gray;">04/08/2003 </p>
+                    <div class="btn-box" >
+                        <a href="https://www.facebook.com/profile.php?id=100006831977249" class="profile-btn">Add friend
+                        </Frame></a>
+                        <button class="heart-btn" onclick="msg('Minh')"><i class="fa fa-heart"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="heart">
+            <div class="container">
+                <div class="display-date">
+                    <span id="day">day</span>,
+                    <span id="daynum">00</span>
+                    <span id="month">month</span>
+                    <span id="year">0000</span>
+                </div>
+                <div class="display-time"></div>
+                <h2 id="days-in-love">DAY:</h2>
+            </div>
+        </div>
+        <div class="friends">
+            <div class="box">
+                <img class="profile-pic" src="./resource/tra.jpg" alt="avatar">
+                <div class="profile">
+                    <strong class="name" style="font-weight:bold;">Nguyễn Hương Trà</strong>
+                    <p class = "bdate" style="color: gray;">28/08/2003</p>
+                    <div class="btn-box" >
+                        <a href="https://www.facebook.com/profile.php?id=100014537854436" class="profile-btn">Add friend</a>
+                        <button class="heart-btn" onclick="msg('Tra')" ><i class="fa fa-heart"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="msg-box">
+            <h2 class="sender">From </h2>
+            <br>
+            <p class="msg"></p>
+            <button class="out-btn" onclick="cancel()">LUV U !!</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.friends{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+}
+
+.box{
+    aspect-ratio: 1/1.6;
+    width: 10vw;
+    background: white;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    
+}
+.profile-pic{
+    aspect-ratio: 1/1;
+    width: 10vw;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin-bottom: 0.3vw;
+    margin-top: 0;
+}
+.bdate{
+    font-size: 0.9vw;
+    margin-bottom: 0.2vw;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial;
+    padding: 0;
+    margin-left: 0.4vw;
+    margin-top: 0.4vw; 
+    text-align: start;
+    align-items: flex-start;
+
+}
+.profile-btn{
+    display: inline;
+    font-size: 0.8vw;
+    text-decoration: none;
+    background-color: rgb(62, 116, 232);
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1vw;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.profile-btn:hover{
+    opacity: 90%;
+}
+
+
+.heart:after{
+    aspect-ratio: 1/1;
+    width:20vw;
+    border-radius:50%;
+    position:absolute;
+    content:"";
+    top:0;
+    left:-10vw;
+    background-color:#FE7F9C;
+    /*border-top:1px solid rgba(213,9,60,1);
+    border-left:0px solid rgba(213,9,60,1);*/
+    z-index:0;
+}
+
+.heart:before{
+    aspect-ratio: 1/1;
+    width:20vw;
+    border-radius:50%;
+    position:absolute;
+    content:"";
+    top:-10vw;
+    right:0px;
+    background-color:#FE7F9C;
+    z-index:-1;
+}
+.heart{
+    aspect-ratio: 1/1;
+    width:20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color:#FE7F9C;
+
+    position:relative;
+    transform:rotate(45deg);
+    box-shadow:0 0 40px rgba(213,9,60,1);
+    -webkit-animation:example 0.3s linear 1s infinite alternate ;
+    z-index:2;
+}
+
+@-webkit-keyframes example{
+0%   { -webkit-transform:scale(1,1) rotate(45deg);box-shadow:0 0 40px rgba(213,9,60,1);}
+    100%  {-webkit-transform:scale(1.1,1.1) rotate(45deg);box-shadow:0 0 40px rgba(213,9,60,.6);}
+    }
+
+
+.heart-btn{
+    display: inline;
+    font-size: 0.9vw;
+    margin-left: 0.8vw;
+    cursor: pointer;
+    padding: 0.4vw;  
+    border: 0.1vw solid black;
+    border-radius: 40%;
+    background-color: #FE7F9C;
+    box-shadow: 0 0.3vw 0px rgba(0,0,0,1);
+    transition: 0.2s; 
+}
+
+
+.heart-btn:active{
+    translate: 0px 0.3vw;
+    box-shadow:0 0vw 0 rgba(0,0,0,0.5);
+}
+
+.btn-box{
+    display: flex;
+    height: 2vw;
+    justify-content: space-around;
+    margin-bottom: 0.8vw;
+}
+
+
+.clock{
+    text-align: center;
+    position: absolute;
+    rotate: -45deg;
+    z-index: 3;
+   
+}   
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.container{
+    position: relative;
+    z-index: 4;
+    rotate: -45deg;
+    font-family: "Lato", sans-serif;
+    background:transparent;
+    color:pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 2vw;
+    left: -2vw;
+}
+
+.display-date {
+    font-family: 'DynaPuff', cursive;   
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.display-time {
+    font-family: 'DynaPuff', cursive;   
+  display: flex;
+  font-size: 3vw;
+  font-weight: bold;
+  border: 0.3vw solid pink;
+  padding: 1vh 1.5vw;
+  border-radius: 10px;
+  transition: ease-in-out 0.1s;
+  transition-property: background, box-shadow, color;
+  -webkit-box-reflect: below 2px
+  linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+}
+
+.display-time:hover {
+  background: pink;
+  box-shadow: 0 0 30px pink;
+  color: #272727;
+  cursor: pointer;
+}
+
+
